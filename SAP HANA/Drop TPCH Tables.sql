@@ -1,0 +1,8 @@
+DROP TABLE TPCH.lineitem;
+DROP TABLE TPCH.orders;
+DROP TABLE TPCH.customer;
+DROP TABLE TPCH.partsupp;
+DROP TABLE TPCH.part;
+DROP TABLE TPCH.supplier;
+DROP TABLE TPCH.nation;
+DROP TABLE TPCH.region;
