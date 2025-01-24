@@ -1,8 +1,7 @@
 --
--- Name: customer; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: customer; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.customer (
+CREATE TABLE public.customer (
     c_custkey numeric NOT NULL,
     c_mktsegment character(10),
     c_nationkey numeric,
@@ -12,15 +11,10 @@ CREATE TABLE TPCH.customer (
     c_acctbal numeric,
     c_comment character varying(118)
 );
-
-
--- ALTER TABLE TPCH.customer OWNER TO tpch;
-
 --
--- Name: lineitem; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: lineitem; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.lineitem (
+CREATE TABLE public.lineitem (
     l_shipdate timestamp without time zone,
     l_orderkey numeric NOT NULL,
     l_discount numeric NOT NULL,
@@ -38,29 +32,19 @@ CREATE TABLE TPCH.lineitem (
     l_shipinstruct character(25),
     l_comment character varying(44)
 );
-
-
--- ALTER TABLE TPCH.lineitem OWNER TO tpch;
-
 --
--- Name: nation; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: nation; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.nation (
+CREATE TABLE public.nation (
     n_nationkey numeric NOT NULL,
     n_name character(25),
     n_regionkey numeric,
     n_comment character varying(152)
 );
-
-
--- ALTER TABLE TPCH.nation OWNER TO tpch;
-
 --
--- Name: orders; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: orders; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.orders (
+CREATE TABLE public.orders (
     o_orderdate timestamp without time zone,
     o_orderkey numeric NOT NULL,
     o_custkey numeric NOT NULL,
@@ -71,15 +55,10 @@ CREATE TABLE TPCH.orders (
     o_totalprice numeric,
     o_comment character varying(79)
 );
-
-
--- ALTER TABLE TPCH.orders OWNER TO tpch;
-
 --
--- Name: part; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: part; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.part (
+CREATE TABLE public.part (
     p_partkey numeric NOT NULL,
     p_type character varying(25),
     p_size numeric,
@@ -90,43 +69,28 @@ CREATE TABLE TPCH.part (
     p_retailprice numeric,
     p_comment character varying(23)
 );
-
-
--- ALTER TABLE TPCH.part OWNER TO tpch;
-
 --
--- Name: partsupp; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: partsupp; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.partsupp (
+CREATE TABLE public.partsupp (
     ps_partkey numeric NOT NULL,
     ps_suppkey numeric NOT NULL,
     ps_supplycost numeric NOT NULL,
     ps_availqty numeric,
     ps_comment character varying(199)
 );
-
-
--- ALTER TABLE TPCH.partsupp OWNER TO tpch;
-
 --
--- Name: region; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: region; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.region (
+CREATE TABLE public.region (
     r_regionkey numeric NOT NULL,
     r_name character(25),
     r_comment character varying(152)
 );
-
-
--- ALTER TABLE TPCH.region OWNER TO tpch;
-
 --
--- Name: supplier; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: supplier; Type: TABLE; Schema: public; Owner: public
 --
-
-CREATE TABLE TPCH.supplier (
+CREATE TABLE public.supplier (
     s_suppkey numeric NOT NULL,
     s_nationkey numeric,
     s_comment character varying(102),
@@ -135,6 +99,3 @@ CREATE TABLE TPCH.supplier (
     s_phone character(15),
     s_acctbal numeric
 );
-
-
--- ALTER TABLE TPCH.supplier OWNER TO tpch;

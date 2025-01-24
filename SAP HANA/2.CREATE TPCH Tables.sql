@@ -1,8 +1,7 @@
 --
--- Name: customer; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: customer; Type: TABLE; Schema: tpch; Owner: tpch
 --
-
-CREATE TABLE TPCH.customer (
+CREATE TABLE tpch.customer (
     c_custkey decimal NOT NULL,
     c_mktsegment character(10),
     c_nationkey decimal,
@@ -12,15 +11,11 @@ CREATE TABLE TPCH.customer (
     c_acctbal decimal,
     c_comment character varying(118)
 );
-
-
--- ALTER TABLE TPCH.customer OWNER TO tpch;
-
 --
--- Name: lineitem; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: lineitem; Type: TABLE; Schema: tpch; Owner: tpch
 --
 
-CREATE TABLE TPCH.lineitem (
+CREATE TABLE tpch.lineitem (
     l_shipdate timestamp,
     l_orderkey decimal NOT NULL,
     l_discount decimal NOT NULL,
@@ -36,50 +31,40 @@ CREATE TABLE TPCH.lineitem (
     l_shipmode character(10),
     l_linenumber decimal NOT NULL,
     l_shipinstruct character(25),
-    l_comment character varying(44)
+    l_comment character varying()
 );
 
 
--- ALTER TABLE TPCH.lineitem OWNER TO tpch;
+-- ALTER TABLE tpch.lineitem OWNER TO tpch;
 
 --
--- Name: nation; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: nation; Type: TABLE; Schema: tpch; Owner: tpch
 --
-
-CREATE TABLE TPCH.nation (
+CREATE TABLE tpch.nation (
     n_nationkey decimal NOT NULL,
     n_name character(25),
     n_regionkey decimal,
     n_comment character varying(152)
 );
-
-
--- ALTER TABLE TPCH.nation OWNER TO tpch;
-
 --
--- Name: orders; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: orders; Type: TABLE; Schema: tpch; Owner: tpch
 --
-
-CREATE TABLE TPCH.orders (
-    o_orderdate timestamp,
-    o_orderkey decimal NOT NULL,
-    o_custkey decimal NOT NULL,
-    o_orderpriority character(15),
-    o_shippriority decimal,
-    o_clerk character(15),
-    o_orderstatus character(1),
+CREATE TABLE tpch.orders (
+    o_orderdate VARCHAR(50),
+    o_orderkey BIGINT NOT NULL,
+    o_custkey BIGINT NOT NULL,
+    o_orderpriority VARCHAR(50),
+    o_shippriority INTEGER,
+    o_clerk VARCHAR(50),
+    o_orderstatus VARCHAR(1),
     o_totalprice decimal,
-    o_comment character varying(79)
+    o_comment VARCHAR(800)
 );
-
-
--- ALTER TABLE TPCH.orders OWNER TO tpch;
-
 --
--- Name: part; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: part; Type: TABLE; Schema: tpch; Owner: tpch
 --
 
-CREATE TABLE TPCH.part (
+CREATE TABLE tpch.part (
     p_partkey decimal NOT NULL,
     p_type character varying(25),
     p_size decimal,
@@ -92,13 +77,13 @@ CREATE TABLE TPCH.part (
 );
 
 
--- ALTER TABLE TPCH.part OWNER TO tpch;
+-- ALTER TABLE tpch.part OWNER TO tpch;
 
 --
--- Name: partsupp; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: partsupp; Type: TABLE; Schema: tpch; Owner: tpch
 --
 
-CREATE TABLE TPCH.partsupp (
+CREATE TABLE tpch.partsupp (
     ps_partkey decimal NOT NULL,
     ps_suppkey decimal NOT NULL,
     ps_supplycost decimal NOT NULL,
@@ -107,26 +92,26 @@ CREATE TABLE TPCH.partsupp (
 );
 
 
--- ALTER TABLE TPCH.partsupp OWNER TO tpch;
+-- ALTER TABLE tpch.partsupp OWNER TO tpch;
 
 --
--- Name: region; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: region; Type: TABLE; Schema: tpch; Owner: tpch
 --
 
-CREATE TABLE TPCH.region (
+CREATE TABLE tpch.region (
     r_regionkey decimal NOT NULL,
     r_name character(25),
     r_comment character varying(152)
 );
 
 
--- ALTER TABLE TPCH.region OWNER TO tpch;
+-- ALTER TABLE tpch.region OWNER TO tpch;
 
 --
--- Name: supplier; Type: TABLE; Schema: TPCH; Owner: tpch
+-- Name: supplier; Type: TABLE; Schema: tpch; Owner: tpch
 --
 
-CREATE TABLE TPCH.supplier (
+CREATE TABLE tpch.supplier (
     s_suppkey decimal NOT NULL,
     s_nationkey decimal,
     s_comment character varying(102),
@@ -137,4 +122,4 @@ CREATE TABLE TPCH.supplier (
 );
 
 
--- ALTER TABLE TPCH.supplier OWNER TO tpch;
+-- ALTER TABLE tpch.supplier OWNER TO tpch;

@@ -1,2 +1,2 @@
-# TPCH
-TPCH Build and Load Scripts
+# public
+public Build and Load Scripts
