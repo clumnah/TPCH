@@ -3,233 +3,233 @@
 -- An empty database will be roughly 7617 kB
 --
 SELECT pg_size_pretty( pg_database_size('testdb1') );
-COPY public.nation FROM '/mnt/tpchdata/nation_1.tbl' CSV DELIMITER '|';
-COPY public.region FROM '/mnt/tpchdata/region_1.tbl' CSV DELIMITER '|';
+COPY public.nation FROM 'C:\mnt\tpchdatanation_1.tbl' CSV DELIMITER '|';
+COPY public.region FROM 'C:\mnt\tpchdataregion_1.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 7891 kB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_1.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_1.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_1.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_1.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_1.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_1.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_1.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_1.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_1.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_1.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_1.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_1.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 58 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_2.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_2.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_2.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_2.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_2.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_2.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_2.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_2.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_2.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_2.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_2.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_2.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 116 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_3.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_3.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_3.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_3.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_3.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_3.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_3.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_3.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_3.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_3.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_3.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_3.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 174 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_4.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_4.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_4.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_4.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_4.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_4.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_4.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_4.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_4.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_4.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_4.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_4.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 232 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_5.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_5.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_5.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_5.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_5.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_5.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_5.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_5.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_5.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_5.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_5.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_5.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 290 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_6.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_6.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_6.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_6.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_6.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_6.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_6.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_6.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_6.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_6.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_6.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_6.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 348 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_7.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_7.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_7.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_7.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_7.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_7.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_7.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_7.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_7.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_7.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_7.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_7.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 406 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_8.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_8.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_8.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_8.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_8.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_8.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_8.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_8.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_8.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_8.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_8.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_8.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 464 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_9.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_9.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_9.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_9.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_9.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_9.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_9.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_9.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_9.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_9.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_9.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_9.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 523 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_10.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_10.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_10.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_10.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_10.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_10.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_10.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_10.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_10.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_10.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_10.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_10.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 581 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_11.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_11.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_11.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_11.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_11.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_11.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_11.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_11.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_11.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_11.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_11.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_11.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 639 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_12.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_12.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_12.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_12.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_12.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_12.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_12.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_12.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_12.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_12.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_12.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_12.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 697 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_13.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_13.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_13.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_13.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_13.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_13.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_13.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_13.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_13.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_13.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_13.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_13.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 755 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_14.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_14.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_14.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_14.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_14.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_14.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_14.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_14.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_14.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_14.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_14.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_14.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 813 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_15.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_15.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_15.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_15.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_15.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_15.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_15.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_15.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_15.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_15.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_15.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_15.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 871 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_16.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_16.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_16.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_16.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_16.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_16.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_16.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_16.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_16.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_16.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_16.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_16.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 926 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_17.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_17.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_17.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_17.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_17.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_17.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_17.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_17.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_17.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_17.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_17.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_17.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 987 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_18.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_18.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_18.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_18.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_18.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_18.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_18.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_18.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_18.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_18.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_18.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_18.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1046 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_19.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_19.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_19.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_19.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_19.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_19.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_19.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_19.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_19.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_19.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_19.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_19.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1104 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_20.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_20.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_20.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_20.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_20.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_20.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_20.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_20.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_20.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_20.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_20.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_20.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1162 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_21.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_21.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_21.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_21.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_21.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_21.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_21.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_21.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_21.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_21.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_21.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_21.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1220 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_22.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_22.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_22.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_22.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_22.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_22.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_22.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_22.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_22.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_22.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_22.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_22.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1278 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_23.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_23.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_23.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_23.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_23.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_23.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_23.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_23.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_23.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_23.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_23.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_23.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1336 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_24.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_24.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_24.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_24.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_24.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_24.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_24.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_24.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_24.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_24.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_24.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_24.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1394 GB size DB
 --
-COPY public.customer FROM '/mnt/tpchdata/customer_25.tbl' CSV DELIMITER '|';
-COPY public.lineitem FROM '/mnt/tpchdata/lineitem_25.tbl' CSV DELIMITER '|';
-COPY public.orders   FROM '/mnt/tpchdata/orders_25.tbl' CSV DELIMITER '|';
-COPY public.part     FROM '/mnt/tpchdata/part_25.tbl' CSV DELIMITER '|';
-COPY public.partsupp FROM '/mnt/tpchdata/partsupp_25.tbl' CSV DELIMITER '|';
-COPY public.supplier FROM '/mnt/tpchdata/supplier_25.tbl' CSV DELIMITER '|';
+COPY public.customer FROM 'C:\mnt\tpchdatacustomer_25.tbl' CSV DELIMITER '|';
+COPY public.lineitem FROM 'C:\mnt\tpchdatalineitem_25.tbl' CSV DELIMITER '|';
+COPY public.orders   FROM 'C:\mnt\tpchdataorders_25.tbl' CSV DELIMITER '|';
+COPY public.part     FROM 'C:\mnt\tpchdatapart_25.tbl' CSV DELIMITER '|';
+COPY public.partsupp FROM 'C:\mnt\tpchdatapartsupp_25.tbl' CSV DELIMITER '|';
+COPY public.supplier FROM 'C:\mnt\tpchdatasupplier_25.tbl' CSV DELIMITER '|';
 SELECT pg_size_pretty( pg_database_size('testdb1') );
 -- Will result in roughly 1453 GB size DB
 --

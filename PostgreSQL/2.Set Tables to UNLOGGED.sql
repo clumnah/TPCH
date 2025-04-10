@@ -1,6 +1,0 @@
-ALTER TABLE public.customer SET UNLOGGED;
-ALTER TABLE public.lineitem SET UNLOGGED;
-ALTER TABLE public.orders SET UNLOGGED;
-ALTER TABLE public.part SET UNLOGGED;
-ALTER TABLE public.partsupp SET UNLOGGED;
-ALTER TABLE public.supplier SET UNLOGGED;

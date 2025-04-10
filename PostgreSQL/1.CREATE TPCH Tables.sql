@@ -11,6 +11,7 @@ CREATE TABLE public.customer (
     c_acctbal numeric,
     c_comment character varying(118)
 );
+ALTER TABLE customer ADD CONSTRAINT pk_customer PRIMARY KEY (c_custkey);
 --
 -- Name: lineitem; Type: TABLE; Schema: public; Owner: public
 --
@@ -32,6 +33,7 @@ CREATE TABLE public.lineitem (
     l_shipinstruct character(25),
     l_comment character varying(44)
 );
+ALTER TABLE lineitem ADD CONSTRAINT pk_lineitem PRIMARY KEY (l_orderkey, l_linenumber);
 --
 -- Name: nation; Type: TABLE; Schema: public; Owner: public
 --
@@ -41,6 +43,7 @@ CREATE TABLE public.nation (
     n_regionkey numeric,
     n_comment character varying(152)
 );
+ALTER TABLE nation ADD CONSTRAINT pk_nation PRIMARY KEY (n_nationkey);
 --
 -- Name: orders; Type: TABLE; Schema: public; Owner: public
 --
@@ -55,6 +58,7 @@ CREATE TABLE public.orders (
     o_totalprice numeric,
     o_comment character varying(79)
 );
+ALTER TABLE orders ADD CONSTRAINT pk_orders PRIMARY KEY (o_orderkey);
 --
 -- Name: part; Type: TABLE; Schema: public; Owner: public
 --
@@ -69,6 +73,7 @@ CREATE TABLE public.part (
     p_retailprice numeric,
     p_comment character varying(23)
 );
+ALTER TABLE part ADD CONSTRAINT pk_part PRIMARY KEY (p_partkey);
 --
 -- Name: partsupp; Type: TABLE; Schema: public; Owner: public
 --
@@ -79,6 +84,7 @@ CREATE TABLE public.partsupp (
     ps_availqty numeric,
     ps_comment character varying(199)
 );
+ALTER TABLE partsupp ADD CONSTRAINT pk_partsupp PRIMARY KEY (ps_partkey, ps_suppkey);
 --
 -- Name: region; Type: TABLE; Schema: public; Owner: public
 --
@@ -87,6 +93,7 @@ CREATE TABLE public.region (
     r_name character(25),
     r_comment character varying(152)
 );
+ALTER TABLE region ADD CONSTRAINT pk_region PRIMARY KEY (r_regionkey);
 --
 -- Name: supplier; Type: TABLE; Schema: public; Owner: public
 --
@@ -99,3 +106,4 @@ CREATE TABLE public.supplier (
     s_phone character(15),
     s_acctbal numeric
 );
+ALTER TABLE supplier ADD CONSTRAINT pk_supplier PRIMARY KEY (s_suppkey);
