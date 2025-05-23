@@ -1,0 +1,16 @@
+sed 's/|/,/g' nation_1.tbl > nation_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection nation --type csv --file /mnt/data/nation_1.csv --fields "N_NATIONKEY.int32(), N_NAME.string(), N_REGIONKEY.int32(), N_COMMENT.string()"  --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' region_1.tbl > region_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection region --type csv --file /mnt/data/region_1.csv --fields "R_REGIONKEY.int32(),R_NAME.string(),R_COMMENT.string()"  --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' customer_1.tbl > customer_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection customer --type csv --file /mnt/data/customer_1.csv --fields "C_CUSTKEY.int32(),C_NAME.string(),C_ADDRESS.string(),C_NATIONKEY.int32(),C_PHONE.string(),C_ACCTBAL.decimal(),C_MKTSEGMENT.string(),C_COMMENT.string()" --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' part_1.tbl > part_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection part --type csv --file /mnt/data/part_1.csv --fields "P_PARTKEY.int32(),P_NAME.string(),P_SIZE.int32(),P_BRAND.string(),P_TYPE.string(),P_CONTAINER.string(),P_MFGR.string(),P_RETAILPRICE.decimal(),P_COMMENT.string()" --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' supplier_1.tbl > supplier_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection supplier --type csv --file /mnt/data/supplier_1.csv --fields "S_SUPPKEY.int32(),S_NATIONKEY.int32(),S_COMMENT.string(),S_NAME.string(),S_ADDRESS.string(),S_PHONE.string(),S_ACCTBAL.decimal()" --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' partsupp_1.tbl > partsupp_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection partsupp --type csv --file /mnt/data/partsupp_1.csv --fields "PS_PARTKEY.int32(),PS_SUPPKEY.int32(),PS_SUPPLYCOST.decimal(),PS_AVAILQTY.int32(),PS_COMMENT.string()" --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' orders_1.tbl > orders_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection orders --type csv --file /mnt/data/orders_1.csv --fields "O_ORDERDATE.date(),O_ORDERKEY.int32(),O_CUSTKEY.int32(),O_ORDERPRIORITY.string(),O_SHIPPRIORITY.int32(),O_CLERK.string(),O_ORDERSTATUS.string(),O_TOTALPRICE.decimal(),O_COMMENT.string()" --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
+sed 's/|/,/g' lineitem_1.tbl > lineitem_1.csv
+mongoimport --host cl-mongodb-6.tpm.lab --port 27017 --db tpch --collection lineitem --type csv --file /mnt/data/lineitem_1.csv --fields "L_SHIPDATE.date(),L_LINENUMBER.int32(),L_DISCOUNT.decimal(),L_EXTENDEDPRICE.decimal(),L_ORDERKEY.int32(),L_QUANTITY.decimal(),L_RETURNFLAG.string(),L_PARTKEY.int32(),L_LINESTATUS.string(),L_TAX.decimal(),L_RECEIPTDATE.date(),L_COMMITDATE.date(),L_SHIPMODE.string(),L_SUPPKEY.int32(),L_SHIPINSTRUCT.string(),L_COMMENT.string()" --authenticationDatabase=admin --username=rootAdminRubrik --password='Rubrik123!@#'
