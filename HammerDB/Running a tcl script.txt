@@ -1,0 +1,7 @@
+Go into the directory where HammerDB was installed. 
+
+At the prompt:
+.\hammerdbcli.exe auto "path/script.tcl"
+
+Example:
+.\hammerdbcli.exe auto "C:\mnt\temp\CreateSchema.tcl"
