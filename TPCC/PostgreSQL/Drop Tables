@@ -1,0 +1,9 @@
+DROP TABLE public.customer;
+DROP TABLE public.district;
+DROP TABLE public.history;
+DROP TABLE public.item;
+DROP TABLE public.new_order;
+DROP TABLE public.order_line;
+DROP TABLE public.orders;
+DROP TABLE public.stock;
+DROP TABLE public.warehouse;
