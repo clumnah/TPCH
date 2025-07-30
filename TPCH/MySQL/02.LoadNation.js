@@ -1,0 +1,1 @@
+util.importTable("/mnt/tpch/nation_1.tbl",{schema: "tpch", table:"NATION", fieldsTerminatedBy: "|", linesTerminatedBy: "\n", skipRows: 0});
